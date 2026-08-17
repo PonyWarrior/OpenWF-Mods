@@ -1,0 +1,27 @@
+-- Author : PonyWarrior
+--
+local range = 5
+local playerPos = gRegion:GetLocalPlayerAvatar():GetPosition()
+local blacklist = {
+	"/Fx/",
+	"/Sounds/",
+    "/Tenno/",
+    "/Upgrades/",
+    "/Weapons/",
+    "/PlayerControllable/"
+}
+for gRegion:FindAll(gEntityType) as entity do
+    if entity.GetPosition and entity:GetPosition():distance(playerPos) <= range then
+        local entityName = entity:GetType():GetFullName()
+        local pass = true
+        for i, check in blacklist do
+            if check in entityName then
+                pass = false
+            end
+        end
+        if pass then
+            print(entity:GetType():GetFullName(), entity:GetTag())
+        end
+    end
+end
+

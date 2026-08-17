@@ -1,0 +1,11 @@
+# Zenith alt fire only use 1 ammo per shot
+/Lotus/Weapons/Tenno/LongGuns/LoginPrimary/SundialRifle
+r|ammoRequirement=3|ammoRequirement=1
+
+# Weapon ammo buffs
+# AoE weapons that got shafted by veilbreaker
+/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Zarr/KuvaZarr & /Lotus/Weapons/Grineer/Bows/GrnBow/GrnBowWeapon & /Lotus/Weapons/Corpus/Bow/Longbow/CrpBow & /Lotus/Weapons/Corpus/Bow/Longbow/PrismaLenz/PrismaLenzWeapon & /Lotus/Weapons/Grineer/KuvaLich/LongGuns/Ogris/KuvaOgris & /Lotus/Weapons/Tenno/Bows/PrimeDerelictCernos/DerelictCernos
+q|AmmoCapacity|50
+q|AmmoPickUpCount|5
+/Lotus/Weapons/Grineer/KuvaLich/LongGuns/Ogris/KuvaOgris
+q|AmmoClipSize|5

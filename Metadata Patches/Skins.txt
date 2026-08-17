@@ -1,0 +1,8 @@
+# Oraxia base skin, no front and back flaps
+/Lotus/Upgrades/Skins/Oraxia/OraxiaSkin
+r|/Lotus/Characters/Tenno/Oraxia/Cloth/OraxiaFrontHipClothSkeletalCloth|
+r|/Lotus/Characters/Tenno/Oraxia/Cloth/OraxiaBackHipClothSkeletalCloth|
+
+# Khora prime skin, no back flap
+/Lotus/Upgrades/Skins/Khora/KhoraPrimeSkin
+r|/Lotus/Characters/Tenno/Quill/KhoraPrime/Cloth/KhoraPrimeHipTailCloth|

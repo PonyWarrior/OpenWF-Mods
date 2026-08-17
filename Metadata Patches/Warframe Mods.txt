@@ -1,0 +1,49 @@
+# Titania
+# Razorwing no drain, x10 vacuum and able to interact
+/Lotus/Powersuits/Fairy/Abilities/FairyFlightAbility
+q|EnergyConsumptionOverTime|0
+r|/Lotus/Powersuits/Fairy/FlightInputFilter|/Lotus/Types/Player/TennoInputFilter
+r|/Lotus/Powersuits/Fairy/FlightMeleeInputFilter|/Lotus/Types/Player/TennoInputFilter
+/Lotus/Powersuits/Fairy/FlightVacuum
+q|Radius|100
+
+# Nova
+# Null stars don't shoot enemies
+/Lotus/Powersuits/AntiMatter/Abilities/NullStarAbility
+r|SecondaryScripts|Disabled
+
+# Koumei
+# Omikuji cooldown doesn't increase
+/Lotus/Powersuits/Koumei/Abilities/KoumeiFortuneAbility
+q|SecondaryScripts.4.functionName|Disabled
+
+# Khora
+# 1 extra slot on Khora prime, second aura slot doesn't work
+/Lotus/Powersuits/Khora/KhoraPrime
+ArtifactSlots={
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_TACTIC,
+    AP_DEFENSE,
+    AP_ATTACK,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_DEFENSE,
+    AP_TACTIC,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL,
+    AP_UNIVERSAL
+}
+
+# Oraxia
+# No energy drain on 4
+/Lotus/Powersuits/Oraxia/Abilities/OraxiaClimbAbility
+r|EnergyConsumptionOverTime=5|EnergyConsumptionOverTime=0
+
+# Jade
+# No energy drain on 4 and able to interact
+/Lotus/Powersuits/Choir/Abilities/ChoirEruptAbility
+r|/Lotus/Powersuits/Choir/EruptInputFilter|/Lotus/Types/Player/TennoInputFilter
+q|EnergyConsumptionOverTime|0

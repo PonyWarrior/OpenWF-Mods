@@ -1,0 +1,59 @@
+# Energize no cooldown
+/Lotus/Upgrades/CosmeticEnhancers/Utility/GolemArcaneRadialEnergyOnEnergyPickup
+q|Upgrades.0.LocKeyWordScript._cooldown|0
+q|Upgrades.1.LocKeyWordScript._cooldown|0
+q|Upgrades.2.LocKeyWordScript._cooldown|0
+q|Script._cooldown|0
+q|UpgradeDuration|0
+
+# Merciless ammo revert
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryDamageOnKill & /Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryDamageOnKill
+ExtraUpgrades={
+    {
+        UpgradeType=WEAPON_RELOAD_SPEED
+        OperationType=STACKING_MULTIPLY
+        Value=0.3
+        DamageType=DT_ANY
+        AutoType=1
+        CheckTypeOnInstall=0
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponReloadSpeedModDesc
+        LocKeyWordScript={Script=""}
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    },
+    {
+        UpgradeType=WEAPON_AMMO_MAX
+        OperationType=STACKING_MULTIPLY
+        Value=1.0
+        DamageType=DT_ANY
+        AutoType=1
+        CheckTypeOnInstall=0
+        OverrideLocalization=1
+        LocTag=/Lotus/Language/Upgrades/WeaponMaxAmmoModDesc
+        LocKeyWordScript={Script=""}
+        DisplayAsMultiplier=0
+        DisplayAsPercent=1
+        ReverseValueSymbol=0
+        SmallerIsBetter=0
+        RoundTo=0.1
+        RoundingMode=RM_ROUND
+        AllowConditionalLocMerge=0
+    }
+}
+
+# Trickery 100% chance max rank
+/Lotus/Upgrades/CosmeticEnhancers/Offensive/InvisibilityOnFinisher
+r|UpgradeChance=0.15|UpgradeChance=0.17
+r|ChanceScalesWithRank=0|ChanceScalesWithRank=1
+
+# Arcanes scale with rank
+# Grace, Aegis
+/Lotus/Upgrades/CosmeticEnhancers/Defensive/HealthRegenOnDamage & /Lotus/Upgrades/CosmeticEnhancers/Defensive/GolemArcaneShieldRegenOnDamage
+r|ChanceScalesWithRank=0|ChanceScalesWithRank=1
+r|DurationScalesWithRank=0|DurationScalesWithRank=1

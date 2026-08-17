@@ -1,0 +1,229 @@
+-- Original author : Sainan
+-- Secondary author : PonyWarrior
+-- Contributors : Dadburry
+--
+-- Search type : Specific Types only, On mission start only, Infinite range marker | Parameters : Name/Tag, either Range [High|Low] or CustomMarker, Cleanup [true|false] default false
+local lookupPermanent = {
+	{
+		Type = "/EE/Types/Engine/Decoration",
+		Range = "High",
+		Cleanup = true,
+		Items = {
+			"LockerCache", -- Sabotage cache
+			"UltraRareCorpusLootCrate",
+			"UltraRareCorpusShipLootCrate",
+			"UltraRareGrineerLootCrate",
+			"UltraRareOrokinLootCrate",
+			"RareGrineerForestLootCrate",
+			"Railjack/CorpusPointOfInterestUltraRareLootCrate",
+			"Railjack/GrineerPointOfInterestUltraRareLootCrate",
+			"Railjack/OrokinPOILootCrateUltraRare",
+			"Railjack/OrokinPointOfInterestUltraRareLootCrate",
+			"RareGrineerLootCrate",
+			"Railjack/GrineerPointOfInterestRareLootCrate",
+			"RareCorpusLootCrate",
+			"Railjack/CorpusPointOfInterestRareLootCrate",
+			"PuzzleOrokinLootCrate",
+			"RareOrokinLootCrate",
+			"Railjack/OrokinPOILootCrateRare",
+		}
+	},
+	{
+		Type = "/Lotus/Types/Game/PickUps/LotusPickUp",
+		Range = "High",
+		Items = {
+			"FusionTreasure", -- Ayatan Sculpture
+			"KahlCred", -- Kahl Stock pickup
+			"KDrivePart", -- Kahl K-Drive part
+		}
+	},
+	{
+		Type = "/Lotus/Types/PickUps/GameplayObjectPickup",
+		Range = "High",
+		Items = {
+			"DagathMissionPickup", -- Vainthorn
+			"SafeDepositKeyPickup", -- 1999 Techrot Safe key
+		}
+	},
+	{
+		Type = "/EE/Types/Engine/Decoration",
+		CustomMarker = "/Lotus/Types/Gameplay/Zariman/AngelStatueMarkerInfo",
+		Items = {
+			"/Lotus/Characters/Zariman/VoidAngel/VoidAngelWingsDeco" -- Zariman Dormant Void Angel
+		}
+	},
+	{
+		Type = "/EE/Types/Actions/ReplicatedHitSwitch",
+		Range = "High",
+		Items = {
+			"OrokinVaultDoor", -- Derelict Corrupted Vault
+			"SpecterSummonAction" -- Silver Grove
+		}
+	},
+	{
+		Type = "/EE/Types/Actions/HitSwitch",
+		Items = {
+			"DuviriMITWCollectibleDecoHitSwitch", -- Isleweaver lore fragment
+			"DuviriCollectibleDecoHitSwitch" -- Duviri lore fragment
+		},
+		Range = "High"
+	},
+	{
+		Type = "/Lotus/Types/Game/LotusEffectDecoration",
+		Range = "High",
+		Items = {
+			"EntratiDoppelgangerGrimoireSpawner"
+		}
+	},
+	{
+		Type = "/EE/Types/Engine/Decoration",
+		Range = "Low",
+		Items = {
+			"/Lotus/Types/Lore/LoreFragmentScanDeco",
+			"/Lotus/Types/Lore/FighterFragmentScanDeco",
+			"/Lotus/Types/Game/CollectibleDeco",
+			"/Lotus/Types/Lore/SongFragmentScanDeco",
+		}
+	},
+	{
+		Type = "/Lotus/Types/Game/PickUps/LotusPickUp",
+		CustomMarker = "/Lotus/Types/Game/MarkerInfos/VoidPlumeMarkerInfo",
+		Items = {
+			"DogTag",
+		}
+	},
+	{
+		Type = "/Lotus/Types/Game/PickUps/LotusPickUp",
+		Range = "Low",
+		Items = {
+			"MelicaKeyItemPickup", -- Zarium Accolade
+		}
+	},
+}
+-- Prevent marking unrelated entities with similar names to targets
+local blacklist = {
+	"/Fx/",
+	"/Sounds/"
+}
+-- Search type : Specific Types only, Repeat every 5s during mission | Parameters : Type mandatory, Items table with Name/Tag mandatory, Marker optional default /Lotus/Types/Game/MarkerInfos/LootMarkerInfoGoldenInstinct
+local customLookups = {
+	{
+		Type = "/Lotus/Types/PickUps/GameplayObjectPickup",
+		Items = {
+			"SecurityCredentialsPickup", -- Survival security override
+			"SupplyCrateKeyPickup", -- 1999 Effervon crate key
+			"SuperFuel" -- Ascension ionic boost
+		}
+	},
+	{
+		Type = "/Lotus/Types/Game/PickUps/LotusPickUp",
+		Items = {
+			"MushroomPatchPickup", -- Deep Mines mushrooms at entrance
+			"MushroomPatchBonusPickup" -- Deep Mines mushrooms at labs
+		}
+	},
+	{
+		Type = "/Lotus/Types/Game/LotusFocusPickUp",
+		Items = {
+			"DuviriArenaBoonPickup", -- Circuit Decree Fragment
+		}
+	},
+	{
+		Type = "/Lotus/Types/Game/PickUpActions/GameplayObjectPickupAction",
+		CustomMarker = "/Lotus/Types/Gameplay/Zariman/PowerRiftMarkerInfo",
+		Items = {
+			"AscensionBeaconPickupAction" -- Ascension Sister beacon
+		}
+	},
+	-- {
+	-- 	Type = "/EE/Types/Engine/Decoration",
+	-- 	CustomMarker = "/Lotus/Types/Gameplay/Zariman/PowerRiftMarkerInfo",
+	-- 	Items = {
+	-- 		"PowerRiftDeco" -- Lohk surge
+	-- 	}
+	-- }
+}
+while true do
+	local game_rules = gGameRules
+	if IsNull(game_rules) then
+		yield()
+		continue
+	end
+
+	do
+		local loader = UISys.ScriptResLoader_Create({ "/Lotus/Types/Game/MarkerInfos/LootMarkerInfoGoldenInstinct" })
+		repeat
+			yield()
+		until loader:IsDone()
+	end
+
+	local permanentMarkersHighRange = {}
+	for lookupPermanent as lookup do
+		for gRegion:FindAll(Type(lookup.Type)) as entity do
+			if entity.GetType then
+				-- print(entity:GetType():GetFullName(), entity:GetTag())
+				local entityName = entity:GetType():GetFullName()
+				local pass = true
+				for i, check in blacklist do
+					if check in entityName then
+						pass = false
+					end
+				end
+				local entityTag = entity:GetTag()
+				if pass then
+					for lookup.Items as item do
+						if (item in entityName or item in entityTag) and lookup.CustomMarker and not entity:GetAttachment(Type(lookup.CustomMarker)) then
+							print(entityName, entityTag)
+							entity:Attach(Type(lookup.CustomMarker))
+						elseif (item in entityName or item in entityTag) and lookup.Range == "High" and not entity:GetAttachment(Type("/Lotus/Types/Game/MarkerInfos/LootMarkerInfoGoldenInstinct")) then
+							print(entityName, entityTag)
+							entity:Attach(Type("/Lotus/Types/Game/MarkerInfos/LootMarkerInfoGoldenInstinct"))
+							if lookup.Cleanup then
+								permanentMarkersHighRange:insert(entity)
+							end
+						elseif (item in entityName or item in entityTag) and lookup.Range == "Low" and not entity:GetAttachment(Type("/Lotus/Types/Game/MarkerInfos/LootMarkerInfoInWorldAW")) then
+							print(entityName, entityTag)
+							entity:Attach(Type("/Lotus/Types/Game/MarkerInfos/LootMarkerInfoInWorldAW"))
+						end
+					end
+				end
+			end
+		end
+	end
+	-- mission loop
+	local customMarkers = {}
+	repeat
+		for customLookups as lookup do
+			for gRegion:FindAll(Type(lookup.Type)) as entity do
+				if not entity.GetType then
+					break
+				end
+				if not entity in customMarkers then
+					for lookup.Items as item do
+						if item in entity:GetName() or item in entity:GetTag() then
+							customMarkers:insert(entity)
+						end
+					end
+				end
+				if entity in customMarkers and not lookup.CustomMarker and not entity:GetAttachment(Type("/Lotus/Types/Game/MarkerInfos/LootMarkerInfoGoldenInstinct")) then
+					print(entity:GetType():GetFullName(), entity:GetTag())
+					entity:Attach(Type("/Lotus/Types/Game/MarkerInfos/LootMarkerInfoGoldenInstinct"))
+				elseif entity in customMarkers and lookup.CustomMarker and not entity:GetAttachment(Type(lookup.CustomMarker)) then
+					print(entity:GetType():GetFullName(), entity:GetTag())
+					entity:Attach(Type(lookup.CustomMarker))
+				end
+			end
+		end
+		for permanentMarkersHighRange as markedItem do
+			if markedItem.GetAttachment and att := markedItem:GetAttachment(Type("/Lotus/Types/Game/MarkerInfos/LootMarkerInfoGoldenInstinct")) then
+				if markedItem.IsTriggeredAnimationDone and markedItem:IsTriggeredAnimationDone() then
+					att:Destroy()
+				end
+			end
+		end
+		coroutine.sleep(5000)
+		yield()
+	until game_rules ~= gGameRules
+	-- print("Region changed")
+	coroutine.sleep(10000) -- give some time for objects to be created
+end

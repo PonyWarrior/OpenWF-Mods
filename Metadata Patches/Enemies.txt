@@ -1,0 +1,71 @@
+# Disable all enemy ability resistances
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceData1999DisruptionNoxBoss &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataA &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataAmalgamBoss &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataAmbulas &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataArachnoidMed &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataBoss &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataBossHardMode &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataBossNoLooting &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataBossSpace &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataBossVorTwo &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataC &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataDecode &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataDuviriBabyDragon &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataDuviriJackal &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataDuviriNoLoot &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataEidolon &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataEmotionGhost &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataFairyQuestSpecters &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataGolem &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataGrnChampions &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataGrnChampionsGrunt &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataGrnChampionsHealer &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataGrnChampionsHellion &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataGrnChampionsTank &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataHeal &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataImmuneAll &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataImmuneMindPushPullHeal &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataInfestedLiches &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataJackal &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataMITWTreasureBox &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataMITWTriangle &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataNecramechDisruption &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataPush &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataResistTime &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataSprag &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataTank &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataTeshin &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataThumper &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataTurret &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataUmbraChase &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataVenusHyena &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataVorBoss &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceInfestedBabau &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceLasrianChemStrikeNox &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceLich &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceLichAscension &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceLichPet &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceMech &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistancePaxDuviricusDungeonEncounter &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceSlinky &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceWarrior &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/DoubleDefenseAbilityResistanceData &
+/Lotus/Types/Enemies/Tau/Primes/AbilityResistanceDataPrimeBosses &
+/Lotus/Types/Enemies/Tau/Primes/AbilityResistanceDataPrimeBossesHardMode &
+/Lotus/Types/Enemies/Zariman/Avatars/VoidAngelAbilityResistanceData &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceData1999DisruptionNoxBoss &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataBossNoLooting &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataBossVorTwo &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataDuviriNoLoot &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceDataMITWTreasureBox &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistanceLichAscension &
+/Lotus/Types/Game/LotusAbilityResistanceDatas/AbilityResistancePaxDuviricusDungeonEncounter
+r|AR_IMMUNE_MIND|
+r|AR_IMMUNE_TIME|
+r|AR_IMMUNE_CROWD_CONTROL|
+r|AR_IMMUNE_LOOTING|
+r|AR_RESIST_ALL|
+r|AR_IMMUNE_PUSH_PULL|
+r|AR_IMMUNE_DISABLE|
+# AbilityResistances={}
