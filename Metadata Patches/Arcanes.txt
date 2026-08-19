@@ -57,3 +57,7 @@ r|ChanceScalesWithRank=0|ChanceScalesWithRank=1
 /Lotus/Upgrades/CosmeticEnhancers/Defensive/HealthRegenOnDamage & /Lotus/Upgrades/CosmeticEnhancers/Defensive/GolemArcaneShieldRegenOnDamage
 r|ChanceScalesWithRank=0|ChanceScalesWithRank=1
 r|DurationScalesWithRank=0|DurationScalesWithRank=1
+
+# Arcane Onslaught energy threshold 25 > 188
+/Lotus/Upgrades/CosmeticEnhancers/Zariman/AmpOnEnergyDepletedCritChance
+q|Script._regenThreshold|188
