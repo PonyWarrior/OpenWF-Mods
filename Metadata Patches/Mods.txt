@@ -66,3 +66,8 @@ Attacks={
     /Lotus/Weapons/Tenno/Melee/Attacks/GunbladeBranchAB,
     /Lotus/Weapons/Tenno/Melee/Attacks/GunbladeCmbTwoDefaultsA
 }
+
+/Lotus/Upgrades/Mods/Warframe/Expert/AvatarKnockdownResistanceModExpert
+ExtraItemCompatibility={
+    /Lotus/Weapons/Operator/Antiques/LotusAntique
+}
