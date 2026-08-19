@@ -1,0 +1,15 @@
+# School waybounds max rank 3 > 10
+/Lotus/Upgrades/Focus/Attack/Stats/MoreAmmoFocusUpgrade
+& /Lotus/Upgrades/Focus/Attack/Stats/RegenAmmoFocusUpgrade
+& /Lotus/Upgrades/Focus/Defense/Stats/HealthMaxFocusUpgrade
+& /Lotus/Upgrades/Focus/Defense/Stats/HealthRegenFocusUpgrade
+& /Lotus/Upgrades/Focus/Power/Stats/EnergyPoolFocusUpgrade
+& /Lotus/Upgrades/Focus/Power/Stats/EnergyRestoreFocusUpgrade
+& /Lotus/Upgrades/Focus/Tactic/Active/ProjectionStretchUpgrade
+& /Lotus/Upgrades/Focus/Tactic/Stats/DashSpeedFocusUpgrade
+& /Lotus/Upgrades/Focus/Tactic/Stats/MoveSpeedFocusUpgrade
+& /Lotus/Upgrades/Focus/Ward/Residual/SecondChanceDamageBuffFocusUpgrade
+& /Lotus/Upgrades/Focus/Ward/Residual/SecondChanceFocusUpgrade
+& /Lotus/Upgrades/Focus/Ward/Stats/ArmourIncreaseFocusUpgrade
+& /Lotus/Upgrades/Focus/Ward/Stats/BlastRadiusFocusUpgrade
+FusionLimit=QA_VERY_HIGH
