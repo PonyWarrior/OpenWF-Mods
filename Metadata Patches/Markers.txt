@@ -1,0 +1,2 @@
+/Lotus/Types/Game/MarkerInfos/PaintPoolMarkerInfo
+AlwaysInRange=1
