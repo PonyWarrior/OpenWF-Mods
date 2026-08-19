@@ -31,7 +31,8 @@ q|Upgrades.0.Value|0.10
 /Lotus/Upgrades/Mods/Antiques/BaseBonusAntiqueUpgrade &
 /Lotus/Upgrades/Mods/Antiques/BaseBonusAntiqueUpgradeStackUnique &
 /Lotus/Upgrades/Mods/Antiques/ReduceDeathEffect &
-/Lotus/Upgrades/Mods/Antiques/JumpHeight
+/Lotus/Upgrades/Mods/Antiques/JumpHeight &
+/Lotus/Upgrades/Mods/Antiques/AntiqueArmour
 FusionLimit=QA_VERY_HIGH
 
 # Archon mods buffed
