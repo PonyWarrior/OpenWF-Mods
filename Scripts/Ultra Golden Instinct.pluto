@@ -53,6 +53,13 @@ local lookupPermanent = {
 		}
 	},
 	{
+		Type = "/EE/Types/Engine/Decoration",
+		CustomMarker = "/Lotus/Types/Gameplay/Zariman/PowerRiftMarkerInfo",
+		Items = {
+			"DepositObjectDeco", -- Follie's hunt paintings
+		}
+	},
+	{
 		Type = "/EE/Types/Actions/ReplicatedHitSwitch",
 		Range = "High",
 		Items = {
@@ -135,12 +142,19 @@ local customLookups = {
 			"AscensionBeaconPickupAction" -- Ascension Sister beacon
 		}
 	},
+	{
+		Type = "/EE/Types/Engine/Decoration",
+		-- CustomMarker = "/Lotus/Types/Game/MarkerInfos/LootMarkerInfoInWorldAW",
+		Items = {
+			"BalloonLootCrate", -- Follie's hunt balloons
+			"EidolonStorageLockerCache" -- Plains of Eidolon hidden cache
+		}
+	}
 	-- {
 	-- 	Type = "/EE/Types/Engine/Decoration",
 	-- 	CustomMarker = "/Lotus/Types/Gameplay/Zariman/PowerRiftMarkerInfo",
 	-- 	Items = {
 	-- 		"PowerRiftDeco" -- Lohk surge
-	-- 	}
 	-- }
 }
 while true do
