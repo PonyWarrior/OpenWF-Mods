@@ -9,3 +9,11 @@ q|AmmoCapacity|50
 q|AmmoPickUpCount|5
 /Lotus/Weapons/Grineer/KuvaLich/LongGuns/Ogris/KuvaOgris
 q|AmmoClipSize|5
+
+# Dread Incarnon buffs
+# x5 Incarnon meter, Swift Deliverance 30 > 50%
+/Lotus/Weapons/Tenno/Bows/StalkerBow
+q|NumChargesToAdd|25
+q|MaxCharges|100
+/Lotus/Weapons/Tenno/Bows/StalkerBow/DreadIncarnonEvolutions/DreadEvoTier2A
+q|Upgrades.0.Value|0.5
