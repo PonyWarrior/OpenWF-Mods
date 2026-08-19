@@ -6,3 +6,9 @@ r|/Lotus/Characters/Tenno/Oraxia/Cloth/OraxiaBackHipClothSkeletalCloth|
 # Khora prime skin, no back flap
 /Lotus/Upgrades/Skins/Khora/KhoraPrimeSkin
 r|/Lotus/Characters/Tenno/Quill/KhoraPrime/Cloth/KhoraPrimeHipTailCloth|
+
+/Lotus/Upgrades/Skins/Yareli/YareliSkin
+r|/Lotus/Characters/Tenno/Yareli/Cloth/YareliFinsBackCloth|
+r|/Lotus/Characters/Tenno/Yareli/Cloth/YareliFrillsSkirtBCloth|
+#r|/Lotus/Characters/Tenno/Yareli/Cloth/YareliFrillsScapulaCloth|
+#r|/Lotus/Characters/Tenno/Yareli/Cloth/YareliSkirtFinsCloth|
