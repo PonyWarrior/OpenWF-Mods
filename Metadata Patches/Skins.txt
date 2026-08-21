@@ -13,3 +13,29 @@ r|/Lotus/Characters/Tenno/Yareli/Cloth/YareliFinsBackCloth|
 r|/Lotus/Characters/Tenno/Yareli/Cloth/YareliFrillsSkirtBCloth|
 #r|/Lotus/Characters/Tenno/Yareli/Cloth/YareliFrillsScapulaCloth|
 #r|/Lotus/Characters/Tenno/Yareli/Cloth/YareliSkirtFinsCloth|
+
+# Lotus skins for Warframes
+# Can't change skin on Lotus with this patch active
+/Lotus/Upgrades/Skins/Lotus/NewWarLotusSkin
+& /Lotus/Upgrades/Skins/Lotus/EidolonLotusSkin
+& /Lotus/Upgrades/Skins/Lotus/HalloweenLotusSkin
+& /Lotus/Upgrades/Skins/Lotus/LotusHelmet
+& /Lotus/Upgrades/Skins/Lotus/LotusSkin
+& /Lotus/Upgrades/Skins/Lotus/ScarredLotusSkin
+& /Lotus/Upgrades/Skins/Lotus/SentientLotusSkin
+& /Lotus/Upgrades/Skins/Lotus/SentientLotusSkinAlt
+& /Lotus/Upgrades/Skins/Lotus/UnmaskedLotusSkin
+& /Lotus/Upgrades/Skins/Lotus/XakuDeluxeLotusSkin
+q|Weapon|/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+
+/Lotus/StoreItems/Upgrades/Skins/Lotus/NewWarLotusSkin
+& /Lotus/StoreItems/Upgrades/Skins/Lotus/EidolonLotusSkin
+& /Lotus/StoreItems/Upgrades/Skins/Lotus/HalloweenLotusSkin
+& /Lotus/StoreItems/Upgrades/Skins/Lotus/LotusHelmet
+& /Lotus/StoreItems/Upgrades/Skins/Lotus/LotusSkin
+& /Lotus/StoreItems/Upgrades/Skins/Lotus/ScarredLotusSkin
+& /Lotus/StoreItems/Upgrades/Skins/Lotus/SentientLotusSkin
+& /Lotus/StoreItems/Upgrades/Skins/Lotus/SentientLotusSkinAlt
+& /Lotus/StoreItems/Upgrades/Skins/Lotus/UnmaskedLotusSkin
+& /Lotus/StoreItems/Upgrades/Skins/Lotus/XakuDeluxeLotusSkin
+q|Compatible|/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
