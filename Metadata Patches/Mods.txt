@@ -72,3 +72,9 @@ Attacks={
 ExtraItemCompatibility={
     /Lotus/Weapons/Operator/Antiques/LotusAntique
 }
+
+# Adaptation on Companions
+/Lotus/Upgrades/Mods/Warframe/AvatarResistanceOnDamageMod
+ExtraItemCompatibility={
+    /Lotus/Types/Game/SentinelPowerSuit
+}
