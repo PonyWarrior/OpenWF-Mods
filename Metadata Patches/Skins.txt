@@ -7,6 +7,7 @@ r|/Lotus/Characters/Tenno/Oraxia/Cloth/OraxiaBackHipClothSkeletalCloth|
 /Lotus/Upgrades/Skins/Khora/KhoraPrimeSkin
 r|/Lotus/Characters/Tenno/Quill/KhoraPrime/Cloth/KhoraPrimeHipTailCloth|
 
+# Yareli base skin, no back flap
 /Lotus/Upgrades/Skins/Yareli/YareliSkin
 r|/Lotus/Characters/Tenno/Yareli/Cloth/YareliFinsBackCloth|
 r|/Lotus/Characters/Tenno/Yareli/Cloth/YareliFrillsSkirtBCloth|

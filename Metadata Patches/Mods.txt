@@ -67,6 +67,7 @@ Attacks={
     /Lotus/Weapons/Tenno/Melee/Attacks/GunbladeCmbTwoDefaultsA
 }
 
+# Primed Sure Footed on Operator
 /Lotus/Upgrades/Mods/Warframe/Expert/AvatarKnockdownResistanceModExpert
 ExtraItemCompatibility={
     /Lotus/Weapons/Operator/Antiques/LotusAntique
