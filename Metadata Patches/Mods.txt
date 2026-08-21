@@ -54,11 +54,11 @@ q|Upgrades.0.Value|0.09091
 # Resourceful & Prosperous 100%
 # Loyal 50%/50%
 /Lotus/Types/Sentinels/SentinelPrecepts/BeastResourceDoublingMod & /Lotus/Types/Sentinels/SentinelPrecepts/BeastCreditDoublingMod
-r|0.003|0.25
+r|0.055|0.25
 r|0.025|0.15
 /Lotus/Types/Sentinels/SentinelPrecepts/BeastLoyalRetriever
-r|0.003|0.125
-r|0.025|0.9375
+r|0.03|0.125
+r|0.02|0.075
 
 # High Noon neutral and moving combo replaced with fast armor strip combo
 /Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeComboABranch & /Lotus/Weapons/Tenno/Melee/AttackSets/GunbladeEquippedQuickDefaults
