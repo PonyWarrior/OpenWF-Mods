@@ -73,6 +73,33 @@ ExtraItemCompatibility={
 /Lotus/Upgrades/Mods/Warframe/AvatarResistanceOnDamageMod
 ExtraItemCompatibility={
     /Lotus/Types/Game/SentinelPowerSuit
-}# Frail Momentum actually good
+}
+
+# Frail Momentum actually good
 /Lotus/Upgrades/Mods/Shotgun/DualStat/CorruptedFireRateDamageShotgun
 q|Upgrades.0.Value|0.3
+
+# 60/60 Mods max rank 5
+/Lotus/Upgrades/Mods/Rifle/DualStat/ElectEventRifleMod &
+/Lotus/Upgrades/Mods/Rifle/DualStat/FireEventRifleMod &
+/Lotus/Upgrades/Mods/Rifle/DualStat/IceEventRifleMod &
+/Lotus/Upgrades/Mods/Rifle/DualStat/MagneticClipRifleMod &
+/Lotus/Upgrades/Mods/Rifle/DualStat/PoisonEventRifleMod &
+/Lotus/Upgrades/Mods/Rifle/DualStat/RadiationReloadRifleMod &
+/Lotus/Upgrades/Mods/Rifle/DualStat/WildfireMod &
+/Lotus/Upgrades/Mods/Pistol/DualStat/PoisonEventPistolMod &
+/Lotus/Upgrades/Mods/Pistol/DualStat/ElectEventPistolMod &
+/Lotus/Upgrades/Mods/Pistol/DualStat/FireEventPistolMod &
+/Lotus/Upgrades/Mods/Pistol/DualStat/IceEventPistolMod &
+/Lotus/Upgrades/Mods/Pistol/DualStat/IceStormMod &
+/Lotus/Upgrades/Mods/Pistol/DualStat/MagneticCritDamagePistolMod &
+/Lotus/Upgrades/Mods/Pistol/DualStat/RadiationFireratePistolMod &
+/Lotus/Upgrades/Mods/Pistol/DualStat/PoisonEventPistolMod &
+/Lotus/Upgrades/Mods/Melee/DualStat/FireEventMeleeMod &
+/Lotus/Upgrades/Mods/Melee/DualStat/ElectEventMeleeMod &
+/Lotus/Upgrades/Mods/Melee/DualStat/FocusEnergyMod &
+/Lotus/Upgrades/Mods/Melee/DualStat/IceEventMeleeMod &
+/Lotus/Upgrades/Mods/Melee/DualStat/MagneticAttackSpeedMeleeMod &
+/Lotus/Upgrades/Mods/Melee/DualStat/PoisonEventMeleeMod &
+/Lotus/Upgrades/Mods/Melee/DualStat/RadiationEfficiencyMeleeMod
+q|FusionLimit|QA_HIGH
