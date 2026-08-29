@@ -73,4 +73,6 @@ ExtraItemCompatibility={
 /Lotus/Upgrades/Mods/Warframe/AvatarResistanceOnDamageMod
 ExtraItemCompatibility={
     /Lotus/Types/Game/SentinelPowerSuit
-}
+}# Frail Momentum actually good
+/Lotus/Upgrades/Mods/Shotgun/DualStat/CorruptedFireRateDamageShotgun
+q|Upgrades.0.Value|0.3
