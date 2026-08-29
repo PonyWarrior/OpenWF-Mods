@@ -1,7 +1,3 @@
-# Higher Max rank Streamline
-/Lotus/Upgrades/Mods/Warframe/AvatarAbilityEfficiencyMod & 
-FusionLimit=QA_VERY_HIGH
-
 # Overextended -energy instead of strength
 /Lotus/Upgrades/Mods/Warframe/DualStat/CorruptedRangePowerWarframe
 r|AVATAR_ABILITY_STRENGTH|AVATAR_POWER_MAX
