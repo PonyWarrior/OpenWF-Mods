@@ -10,6 +10,7 @@ local lookupPermanent = {
 		Cleanup = true,
 		Items = {
 			"LockerCache", -- Sabotage cache
+			"VoidVaultDoor", -- Netracell
 			"UltraRareCorpusLootCrate",
 			"UltraRareCorpusShipLootCrate",
 			"UltraRareGrineerLootCrate",
@@ -43,6 +44,13 @@ local lookupPermanent = {
 		Items = {
 			"DagathMissionPickup", -- Vainthorn
 			"SafeDepositKeyPickup", -- 1999 Techrot Safe key
+		}
+	},
+	{
+		Type = "/Lotus/Types/Game/CollectibleDeco",
+		Range = "Low",
+		Items = {
+			"CollectibleSeries" -- Kuria
 		}
 	},
 	{
@@ -144,18 +152,17 @@ local customLookups = {
 	},
 	{
 		Type = "/EE/Types/Engine/Decoration",
-		-- CustomMarker = "/Lotus/Types/Game/MarkerInfos/LootMarkerInfoInWorldAW",
 		Items = {
-			"BalloonLootCrate", -- Follie's hunt balloons
+			"EidolonStorageLockerCache" -- Plains of Eidolon hidden cache
+		}
+	},
+	{
+		Type = "/EE/Types/Engine/Decoration",
+		Cleanup = true,
+		Items = {
 			"EidolonStorageLockerCache" -- Plains of Eidolon hidden cache
 		}
 	}
-	-- {
-	-- 	Type = "/EE/Types/Engine/Decoration",
-	-- 	CustomMarker = "/Lotus/Types/Gameplay/Zariman/PowerRiftMarkerInfo",
-	-- 	Items = {
-	-- 		"PowerRiftDeco" -- Lohk surge
-	-- }
 }
 while true do
 	local game_rules = gGameRules
@@ -206,6 +213,7 @@ while true do
 	end
 	-- mission loop
 	local customMarkers = {}
+	local customMarkersToCleanUp = {}
 	repeat
 		for customLookups as lookup do
 			for gRegion:FindAll(Type(lookup.Type)) as entity do
@@ -216,6 +224,9 @@ while true do
 					for lookup.Items as item do
 						if item in entity:GetName() or item in entity:GetTag() then
 							customMarkers:insert(entity)
+							if lookup.Cleanup then
+								customMarkersToCleanUp:insert(entity)
+							end
 						end
 					end
 				end
@@ -229,6 +240,13 @@ while true do
 			end
 		end
 		for permanentMarkersHighRange as markedItem do
+			if markedItem.GetAttachment and att := markedItem:GetAttachment(Type("/Lotus/Types/Game/MarkerInfos/LootMarkerInfoGoldenInstinct")) then
+				if markedItem.IsTriggeredAnimationDone and markedItem:IsTriggeredAnimationDone() then
+					att:Destroy()
+				end
+			end
+		end
+		for customMarkersToCleanUp as markedItem do
 			if markedItem.GetAttachment and att := markedItem:GetAttachment(Type("/Lotus/Types/Game/MarkerInfos/LootMarkerInfoGoldenInstinct")) then
 				if markedItem.IsTriggeredAnimationDone and markedItem:IsTriggeredAnimationDone() then
 					att:Destroy()
