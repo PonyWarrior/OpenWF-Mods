@@ -1,0 +1,28 @@
+-- Author : PonyWarrior
+--
+local keyState = _T
+local player = gRegion:GetLocalPlayerAvatar()
+local validAvatars = { "DefenseAvatar", "ExcavatorAvatar", "BarracksDefenseTarget", "AvatarDefense"}
+
+local function isValidAvatar(avatarName)
+    for validAvatars as name do
+        if name in avatarName then
+            return true
+        end
+    end
+    return false
+end
+
+repeat
+	local inMission = (gGameRules instanceof LotusGameRules)
+	
+	if inMission then
+        for gRegion:GetAvatars() as avatar do
+            if isValidAvatar(avatar:GetType():GetFullName()) or isValidAvatar(avatar:GetTag()) then
+                avatar:DamageControl():GiveTemporaryImmunity(500000, 500000)
+            end
+        end
+	end
+	
+	yield() 
+until not pcall(yield)
