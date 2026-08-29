@@ -1,6 +1,5 @@
 -- Author : PonyWarrior
 --
-local keyState = _T
 local player = gRegion:GetLocalPlayerAvatar()
 local validAvatars = { "DefenseAvatar", "ExcavatorAvatar", "BarracksDefenseTarget", "AvatarDefense"}
 
