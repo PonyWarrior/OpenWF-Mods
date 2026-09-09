@@ -69,7 +69,7 @@ local lookupPermanent = {
 	},
 	{
 		Type = "/EE/Types/Actions/ReplicatedHitSwitch",
-		Range = "High",
+		CustomMarker = "/Lotus/Types/Gameplay/Zariman/PowerRiftMarkerInfo",
 		Items = {
 			"OrokinVaultDoor", -- Derelict Corrupted Vault
 			"SpecterSummonAction" -- Silver Grove
