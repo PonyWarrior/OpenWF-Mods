@@ -2,6 +2,7 @@
 -- Secondary author : PonyWarrior
 -- Contributors : Dadburry
 --
+-- 
 -- Search type : Specific Types only, On mission start only, Infinite range marker | Parameters : Name/Tag, either Range [High|Low] or CustomMarker, Cleanup [true|false] default false
 local lookupPermanent = {
 	{
@@ -10,7 +11,6 @@ local lookupPermanent = {
 		Cleanup = true,
 		Items = {
 			"LockerCache", -- Sabotage cache
-			"VoidVaultDoor", -- Netracell
 			"UltraRareCorpusLootCrate",
 			"UltraRareCorpusShipLootCrate",
 			"UltraRareGrineerLootCrate",
@@ -27,6 +27,13 @@ local lookupPermanent = {
 			"PuzzleOrokinLootCrate",
 			"RareOrokinLootCrate",
 			"Railjack/OrokinPOILootCrateRare",
+		}
+	},
+	{
+		Type = "/EE/Types/Engine/Decoration",
+		CustomMarker = "/Lotus/Types/Gameplay/Zariman/PowerRiftMarkerInfo",
+		Items = {
+			"VoidVaultDoor", -- Netracell
 		}
 	},
 	{
