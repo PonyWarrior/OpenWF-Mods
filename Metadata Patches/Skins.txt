@@ -39,3 +39,8 @@ q|Weapon|/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
 & /Lotus/StoreItems/Upgrades/Skins/Lotus/UnmaskedLotusSkin
 & /Lotus/StoreItems/Upgrades/Skins/Lotus/XakuDeluxeLotusSkin
 q|Compatible|/Lotus/Types/Game/PowerSuits/PlayerPowerSuit
+
+# Mesa Prime no leg flaps
+/Lotus/Upgrades/Skins/Cowgirl/MesaPrimeSkin
+r|/Lotus/Characters/Tenno/Gunslinger/Cloth/MesaPrimeRLegChapsCloth|
+r|/Lotus/Characters/Tenno/Gunslinger/Cloth/MesaPrimeLLegChapsCloth|
