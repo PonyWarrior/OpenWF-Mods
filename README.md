@@ -9,3 +9,11 @@ Originally based on this [script](https://onlyg.it/OpenWF/Mods/src/branch/senpai
 ## Entity Finder
 
 Debug tool, prints the type, name and tag of all entities within a configurable range (vector3 so it's a sphere) around the player avatar. Made for finding entity names to add into Ultra Golden Instinct.
+
+## Invicible Defense Objectives
+
+Makes all defense objectives invincible.
+
+## Sanctuary Xp Booster
+
+Massively boosts affinity gain, but only while inside Sanctuary Onslaught or Elite Sanctuary Onslaught. The goal is replicating easy weapon leveling via public matchmaking in SO/ESO on Live Warframe.
