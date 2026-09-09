@@ -161,12 +161,6 @@ local customLookups = {
 	},
 	{
 		Type = "/EE/Types/Engine/Decoration",
-		Items = {
-			"EidolonStorageLockerCache" -- Plains of Eidolon hidden cache
-		}
-	},
-	{
-		Type = "/EE/Types/Engine/Decoration",
 		Cleanup = true,
 		Items = {
 			"EidolonStorageLockerCache" -- Plains of Eidolon hidden cache
