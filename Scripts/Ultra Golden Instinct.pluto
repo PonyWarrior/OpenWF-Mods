@@ -35,6 +35,7 @@ local lookupPermanent = {
 		CustomMarker = "/Lotus/Types/Gameplay/Zariman/PowerRiftMarkerInfo",
 		Items = {
 			"VoidVaultDoor", -- Netracell
+			"DepositObjectDeco", -- Follie's hunt paintings
 		}
 	},
 	{
@@ -66,13 +67,6 @@ local lookupPermanent = {
 		CustomMarker = "/Lotus/Types/Gameplay/Zariman/AngelStatueMarkerInfo",
 		Items = {
 			"/Lotus/Characters/Zariman/VoidAngel/VoidAngelWingsDeco" -- Zariman Dormant Void Angel
-		}
-	},
-	{
-		Type = "/EE/Types/Engine/Decoration",
-		CustomMarker = "/Lotus/Types/Gameplay/Zariman/PowerRiftMarkerInfo",
-		Items = {
-			"DepositObjectDeco", -- Follie's hunt paintings
 		}
 	},
 	{
