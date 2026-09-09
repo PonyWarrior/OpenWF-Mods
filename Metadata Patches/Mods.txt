@@ -16,6 +16,12 @@ q|Upgrades.1.RoundTo|1
 & /Lotus/Upgrades/Mods/Warframe/AvatarPickupBonusMod
 & /Lotus/Upgrades/Mods/Pistol/Event/AmbulasEvent/SecondaryExplosionRadiusMod
 & /Lotus/Upgrades/Mods/Pistol/Event/AmbulasEvent/Expert/SecondaryExplosionRadiusModExpert
+& /Lotus/Upgrades/Mods/Rifle/WeaponReloadSpeedMod
+& /Lotus/Upgrades/Mods/Rifle/Expert/WeaponReloadSpeedModExpert
+& /Lotus/Upgrades/Mods/Shotgun/WeaponReloadSpeedMod
+& /Lotus/Upgrades/Mods/Shotgun/Expert/WeaponReloadSpeedModExpert
+& /Lotus/Upgrades/Mods/Pistol/WeaponReloadSpeedMod
+& /Lotus/Upgrades/Mods/Pistol/Expert/WeaponReloadSpeedModExpert
 IsUtility=1
 
 # Primed Firestorm & Primed Fulmination buffed
