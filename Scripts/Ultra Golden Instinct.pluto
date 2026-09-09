@@ -3,7 +3,8 @@
 -- Contributors : Dadburry
 --
 -- 
--- Search type : Specific Types only, On mission start only, Infinite range marker | Parameters : Name/Tag, either Range [High|Low] or CustomMarker, Cleanup [true|false] default false
+-- Search type : Scans once 10s after mission load
+-- Parameters : Type, either Range [High|Low] or CustomMarker, Cleanup [true|false] (default false)
 local lookupPermanent = {
 	{
 		Type = "/EE/Types/Engine/Decoration",
@@ -11,7 +12,7 @@ local lookupPermanent = {
 		Cleanup = true,
 		Items = {
 			"LockerCache", -- Sabotage cache
-			"UltraRareCorpusLootCrate",
+			"UltraRareCorpusLootCrate", -- Legendary/Golden crates v
 			"UltraRareCorpusShipLootCrate",
 			"UltraRareGrineerLootCrate",
 			"UltraRareOrokinLootCrate",
@@ -26,7 +27,7 @@ local lookupPermanent = {
 			"Railjack/CorpusPointOfInterestRareLootCrate",
 			"PuzzleOrokinLootCrate",
 			"RareOrokinLootCrate",
-			"Railjack/OrokinPOILootCrateRare",
+			"Railjack/OrokinPOILootCrateRare", -- Legendary/Golden crates ^
 		}
 	},
 	{
@@ -94,24 +95,24 @@ local lookupPermanent = {
 		Type = "/Lotus/Types/Game/LotusEffectDecoration",
 		Range = "High",
 		Items = {
-			"EntratiDoppelgangerGrimoireSpawner"
+			"EntratiDoppelgangerGrimoireSpawner" -- Scathing/Mocking Whisper
 		}
 	},
 	{
 		Type = "/EE/Types/Engine/Decoration",
 		Range = "Low",
 		Items = {
-			"/Lotus/Types/Lore/LoreFragmentScanDeco",
-			"/Lotus/Types/Lore/FighterFragmentScanDeco",
-			"/Lotus/Types/Game/CollectibleDeco",
-			"/Lotus/Types/Lore/SongFragmentScanDeco",
+			"/Lotus/Types/Lore/LoreFragmentScanDeco", -- Cephalon Fragments
+			"/Lotus/Types/Lore/FighterFragmentScanDeco", -- Frame Fighter Data
+			"/Lotus/Types/Game/CollectibleDeco", -- Generic collectible
+			"/Lotus/Types/Lore/SongFragmentScanDeco", -- Somachord
 		}
 	},
 	{
 		Type = "/Lotus/Types/Game/PickUps/LotusPickUp",
 		CustomMarker = "/Lotus/Types/Game/MarkerInfos/VoidPlumeMarkerInfo",
 		Items = {
-			"DogTag",
+			"DogTag", -- Syndicate Medallions
 		}
 	},
 	{
@@ -127,7 +128,8 @@ local blacklist = {
 	"/Fx/",
 	"/Sounds/"
 }
--- Search type : Specific Types only, Repeat every 5s during mission | Parameters : Type mandatory, Items table with Name/Tag mandatory, Marker optional default /Lotus/Types/Game/MarkerInfos/LootMarkerInfoGoldenInstinct
+-- Search type : Repeats every 5s during mission
+-- Parameters : Type, Items table with Name/Tag, Marker optional (default /Lotus/Types/Game/MarkerInfos/LootMarkerInfoGoldenInstinct)
 local customLookups = {
 	{
 		Type = "/Lotus/Types/PickUps/GameplayObjectPickup",
