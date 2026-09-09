@@ -1,0 +1,44 @@
+-- Original author : PonyWarrior
+--
+local keyState = _T
+local key = '_bonus_xp_enabled'
+local pickUpName = "/Lotus/Types/Game/DarkSectors/DarkSectorTimePickup"
+
+local function enable()
+	if not keyState[key] then
+		keyState[key] = true
+		gRegion:GetLocalPlayerAvatar():InventoryControl():AddUpgrade(UpgradeType.GAMEPLAY_KILL_XP_AMOUNT, OperationType.MULTIPLY, 100000)
+		print("Bonus XP enabled")
+	end
+end
+
+local function disable()
+	if keyState[key] then
+		keyState[key] = false
+		gRegion:GetLocalPlayerAvatar():InventoryControl():AddUpgrade(UpgradeType.GAMEPLAY_KILL_XP_AMOUNT, OperationType.MULTIPLY, 0.00001)
+		print("Bonus XP disabled")
+	end
+end
+
+local function isMapValid()
+	for gRegion:FindAll(Type("/Lotus/Types/Items/MiscItems/MiscItemBasePickup")) as entity do
+		if pickUpName in entity:GetType():GetFullName() then
+			return true
+		end
+	end
+	return false
+end
+
+repeat
+	local inMission = (gGameRules instanceof LotusGameRules)
+	
+	if inMission and isMapValid() then
+		enable()
+	else
+		disable()
+	end
+	
+	yield() 
+until not pcall(yield)
+
+disable()
